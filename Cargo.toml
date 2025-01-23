@@ -1,0 +1,21 @@
+[package]
+name = "cpp-algo-example"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "cpp_algo"
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+cxx = "1.0.126"
+serde = { version = "1", features = ["derive"] }
+
+[build-dependencies]
+cmake = "0.1"
+bindgen = "0.69.4"
+cxx-build = "1.0.119"
+
