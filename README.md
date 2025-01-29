@@ -28,5 +28,7 @@ These functions will then be called by TradeBot any time the node receives the c
 
 https://github.com/sayedrasheed/tradebot-rs/blob/master/algo-service/src/cpp_algo/cpp_algo.rs#L236
 
-See video below for an example of this algorithm running in TradeBot:
+# Demo
+See video for an example of this algorithm running in TradeBot:
+[Youtube](https://www.youtube.com/shorts/1vS0TjUB-Ss)
 
