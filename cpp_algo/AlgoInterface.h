@@ -6,6 +6,7 @@ namespace cpp_algo
 {
     static const int NUM_CANDLE_PERIODS = 2;
     static const int MAX_HISTORICAL_DATA_POINTS = 5760; // 3 days of one minute candles is max we will need to store
+
     // Algo parameters entry point, fill in algo params here
     struct AlgoParams
     {
@@ -68,6 +69,9 @@ namespace cpp_algo
 
         // Historical Data handler
         void historical_data_update(const HistoricalDataInput &hd, HistoricalDataOutput &hd_response);
+
+        // Store any transient state in below here
+        CppAlgo cpp_algo_obj;
     };
 
     std::unique_ptr<AlgoInterface> new_algo_interface(AlgoParams const &);

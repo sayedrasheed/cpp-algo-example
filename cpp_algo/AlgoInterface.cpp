@@ -2,8 +2,6 @@
 
 namespace cpp_algo
 {
-    static CppAlgo cpp_algo_obj;
-
     AlgoInterface::AlgoInterface(AlgoParams const &parameters)
     {
         std::vector<int> candle_periods;

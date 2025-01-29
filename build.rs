@@ -39,6 +39,7 @@ fn main() {
         .allowlist_type("cpp_algo::CppCandle")
         .allowlist_type("cpp_algo::CppAdvice")
         .allowlist_type("cpp_algo::Side")
+        .opaque_type("std::.*")
         .layout_tests(false)
         .enable_cxx_namespaces()
         .generate()
